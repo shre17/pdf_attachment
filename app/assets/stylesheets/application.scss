@@ -1,0 +1,22 @@
+@import "bootstrap";
+@media print {
+  body { background-color: #FFF; }
+  #container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 30px;
+  }
+
+  #line_items {
+    page-break-before: always;
+  }
+
+  #pdf_link {
+    display: none;
+  }
+  .hide-btn {
+    display: none;
+  }
+}
