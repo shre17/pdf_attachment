@@ -2,7 +2,7 @@ class UserMailer < ApplicationMailer
   def send_pdf_to_user(user,pdf_file)
     @user = user
     attachments['users.pdf'] = pdf_file
-    mail(:to => user, :subject => "awesome pdf, check it")
+    mail(:to => user, :subject => "Please Check Attachment.")
   end
 end
 
